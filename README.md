@@ -1,7 +1,7 @@
-## get to the directory where all the dataset is
+# get to the directory where all the dataset is
 setwd("./projects/Getting and cleaning data/UCI HAR Dataset")
 
-## read the text file features.txt and activity_labels.txt, which gives the names of the columns of the dataset
+# read the text file features.txt and activity_labels.txt, which gives the names of the columns of the dataset
 VarNames <- read.table("features.txt")
 VarNames <- VarNames$V2
 head(VarNames)
