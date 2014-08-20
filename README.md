@@ -1,7 +1,7 @@
 ##### get to the directory where all the dataset is
 setwd("./UCI HAR Dataset")
 
-#### read the text file features.txt and activity_labels.txt, which gives the names of the columns of the dataset
+##### read the text file features.txt and activity_labels.txt, which gives the names of the columns of the dataset
 VarNames <- read.table("features.txt")
 VarNames <- VarNames$V2
 head(VarNames)
@@ -14,7 +14,7 @@ ActNames <- ActNames$V2
 ##### get to the directory where test dataset is
 setwd("./test")
 
-#### read the test dataset
+##### read the test dataset
 x_test <- read.table("x_test.txt")
 
 ##### name the activities in the test data set with descriptive activity names 
